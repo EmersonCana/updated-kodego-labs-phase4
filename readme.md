@@ -1,8 +1,8 @@
-# React Props Exercise: Student Dashboard
+# React State and Events Exercise
 
 ## Objective
 
-The objective of this exercise is to build a student dashboard application using React, focusing on understanding and implementing various aspects of React props, including passing props, props destructuring, default values, working with lists and keys, using React fragments, and integrating components with props.
+The objective of this exercise is to gain practical experience with React state and event handling, covering event handling in React components, understanding and using React state, managing state with events, working with state and arrays, and understanding information flow and inverse data flow in React applications.
 
 ## Prerequisites
 
@@ -11,57 +11,54 @@ The objective of this exercise is to build a student dashboard application using
 
 ## Task
 
-1. **Setup**
+1. **Event Handling in React**
 
    - Create a new React project using Vite.
-   - Set up the project structure with the necessary components and files.
+   - Create a functional component named `ButtonCounter`.
+   - Inside the `ButtonCounter` component, render a button element with the text "Click Me".
+   - Add an event handler to the button that updates the component state each time it is clicked, incrementing a counter value.
+   - Display the current count value below the button.
 
-2. **Student Component**
+2. **React State**
 
-   - Create a functional component named `Student` that takes props for `name`, `age`, and `grade`.
-   - Render these props within the component to display student information, such as name, age, and grade.
-   - Use default values for `age` and `grade` props if not provided.
+   - Create a class-based component named `Counter`.
+   - Initialize a state property named `count` with an initial value of 0.
+   - Render a button element that displays the current count value.
+   - Implement an event handler that increments the count value when the button is clicked.
+   - Update the component state to reflect the new count value.
 
-   ```const students = [
-   { id: 1, name: 'John Doe', age: 18, grade: 'A' },
-   { id: 2, name: 'Jane Smith', age: 17, grade: 'B' },
-   { id: 3, name: 'Michael Johnson', age: 16, grade: 'A-' },
-   { id: 4, name: 'Emily Davis', age: 17, grade: 'B+' },
-   { id: 5, name: 'David Brown', age: 18, grade: 'A' },
-   { id: 6, name: 'Andy Willis', age: , grade: }
-   ];
-   ```
+3. **React State and Events**
 
-3. **StudentList Component**
+   - Modify the `Counter` component to include a reset button.
+   - Implement an event handler for the reset button that sets the count value back to 0 when clicked.
 
-   - Create a new functional component named `StudentList` that takes an array of student objects as a prop.
-   - Inside the `StudentList` component, map through the array of student objects and render each student using the `Student` component.
-   - Ensure that each student component has a unique key prop based on the student's ID or another unique identifier.
+4. **React State and Arrays**
 
-4. **Dashboard Component**
+   - Create a functional component named `TodoList`.
+   - Initialize a state property named `todos` with an initial value of an empty array.
+   - Render an unordered list (`<ul>`) to display the list of todos.
+   - Implement functionality to add new todos to the list using an input field and a submit button.
+   - Update the component state to include the new todo when submitted.
 
-   - Create a functional component named `Dashboard`.
-   - Inside the `Dashboard` component, render a heading indicating it's a student dashboard.
-   - Use the `StudentList` component to display a list of student cards.
-   - Pass an array of student objects as props to the `StudentList` component.
+5. **Information Flow**
 
-5. **Styling**
+   - Create a parent component named `ParentComponent`.
+   - Inside `ParentComponent`, render both the `ButtonCounter` and `Counter` components from tasks 1 and 2.
+   - Experiment with passing data between the parent component and its children using props.
 
-   - Add CSS styling to improve the visual appearance of the student cards and the dashboard layout.
-
-6. **Bonus: Filter Component**
-   - Create a filter component named `Filter` that allows users to filter students based on their grade or age.
-   - Implement the filter functionality to update the displayed student list accordingly.
+6. **Inverse Data Flow**
+   - Implement a feature in the `TodoList` component to mark todos as completed.
+   - Add checkboxes next to each todo item.
+   - Implement an event handler that updates the state to mark a todo as completed when its checkbox is clicked.
 
 ## Task Details
 
 - Implement each task in a separate file or component within your React project.
 - Test each component to ensure it functions as expected.
-- You can use mock data for student objects or create your own data as needed.
-- Ensure that the application is responsive and accessible.
+- You can use mock data or create your own data as needed.
+- Feel free to use additional libraries or tools if needed.
 
 ## Submission
 
 - After completing the exercise, submit your React project containing all the implemented components and functionalities.
 - Provide comments or documentation within your code to explain the purpose of each component and how it works.
-- Include any additional notes or observations about the development process.
