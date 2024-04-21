@@ -1,39 +1,51 @@
-# React Forms Exercise
+# Side Effects and Data Fetching Exercise
 
 ## Objective
 
-The objective of this exercise is to gain practical experience with React forms, covering controlled components, form submission in React, abstraction of form handling with dynamic onChange event handlers, and integrating forms with state and events.
+The objective of this exercise is to gain practical experience with side effects, data fetching, and understanding the component lifecycle phases in React. It covers topics such as the useEffect hook, data fetching techniques, implementing CRUD operations with data fetching, and exploring the mounting, updating, and unmounting phases of components.
 
 ## Prerequisites
 
 - Basic knowledge of HTML, CSS, and JavaScript.
-- Familiarity with React fundamentals, including state and events.
+- Familiarity with React fundamentals, including state and props.
 
 ## Task
 
-1. **Controlled Components**
+1. **The useEffect Hook**
 
    - Create a new React project using Vite.
-   - Create a form component named `LoginForm`.
-   - Inside the `LoginForm` component, render input fields for username and password.
-   - Implement controlled components by setting the input values as state variables and updating them with onChange event handlers.
+   - Implement a functional component named `Timer`.
+   - Inside the `Timer` component, use the useEffect hook to update a timer display every second.
+   - Explore different cleanup strategies and dependencies in useEffect.
 
-2. **React Forms Submit**
+2. **Data Fetching in React**
 
-   - Extend the `LoginForm` component to include a submit button.
-   - Implement form submission functionality by capturing form submission events and logging the form data to the console.
+   - Create a functional component named `UserList`.
+   - Inside the `UserList` component, use the useEffect hook to fetch a list of users from an API endpoint when the component mounts.
+   - Display the list of users in the component.
 
-3. **React Forms Abstraction (Dynamic onChange Event Handler)**
+3. **React Fetch CRUD**
 
-   - Create a generic form component named `DynamicForm`.
-   - The `DynamicForm` component should take props for form fields (such as label, type, name, value, and onChange handler).
-   - Implement dynamic onChange event handling within the `DynamicForm` component to abstract away the form handling logic.
-   - Use the `DynamicForm` component to render a login form with username and password fields.
+   - Create a functional component named `TodoList`.
+   - Inside the `TodoList` component, implement CRUD operations for managing a list of todos using fetch or a library like axios.
+   - Display the list of todos and provide functionality to add, edit, and delete todos.
 
-4. **Putting it All Together: State and Events**
-   - Create a parent component named `FormContainer`.
-   - Inside `FormContainer`, render both the `LoginForm` component from task 1 and the `DynamicForm` component from task 3.
-   - Experiment with different form handling techniques, such as controlled components and abstraction, within the `FormContainer`.
+4. **Component Life Cycle**
+
+   - Create a class-based component named `LifecycleDemo`.
+   - Implement lifecycle methods such as `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`.
+   - Log messages to the console to track component lifecycle events.
+
+5. **Mounting Phase**
+
+   - Explore the mounting phase of a React component by logging messages in the constructor, render method, and componentDidMount lifecycle method of a class-based component.
+
+6. **Updating Phase**
+
+   - Explore the updating phase of a React component by logging messages in the componentDidUpdate lifecycle method of a class-based component when props or state change.
+
+7. **Unmounting Phase**
+   - Explore the unmounting phase of a React component by logging messages in the componentWillUnmount lifecycle method of a class-based component.
 
 ## Task Details
 
