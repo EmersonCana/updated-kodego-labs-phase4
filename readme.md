@@ -1,8 +1,8 @@
-# React Components Exercise
+# React Props Exercise
 
 ## Objective
 
-The objective of this exercise is to gain practical experience with React components, focusing on understanding the basics of components, the differences between functional and class-based components, organizing code with import/export, writing JSX, and conditional rendering using Vite.
+The objective of this exercise is to gain practical experience with React props, covering the basics of passing props to components, props destructuring, default values, working with lists and keys, using React fragments, and integrating components with props.
 
 ## Prerequisites
 
@@ -11,39 +11,38 @@ The objective of this exercise is to gain practical experience with React compon
 
 ## Task
 
-1. **React Component Basics**
+1. **Props Basics**
 
-   - Set up a new React project using Vite.
-   - Create a simple functional component named `HelloWorld` that renders a `<div>` containing the text "Hello, World!".
-   - Use this component in the main `App` component and render it to the DOM.
+   - Create a new React project using Vite.
+   - Create a functional component named `Greeting` that takes a prop called `name` and renders a greeting message.
+   - Use this component in the main `App` component and pass your name as the value for the `name` prop.
 
-2. **Functional vs Class-based Components**
+2. **Props Destructuring and Default Values**
 
-   - Create both a functional and a class-based component for a simple counter.
-   - The counter component should display a count value and two buttons: one to increment the count and one to decrement it.
-   - Implement the functionality to increment and decrement the count in both components.
-   - Compare and contrast the syntax and behavior of functional and class-based components.
+   - Modify the `Greeting` component to destructure the `name` prop within the function body.
+   - Provide a default value for the `name` prop so that if no name is provided, it defaults to "Guest".
 
-3. **Organizing Code with Import/Export**
+3. **Lists and Keys**
 
-   - Create two separate components: `Header` and `Footer`.
-   - Export these components from separate files and import them into the main `App` component.
-   - Render both the `Header` and `Footer` components in the `App` component.
+   - Create a new functional component named `StudentList` that takes an array of student names as a prop.
+   - Inside the `StudentList` component, map through the array of student names and render each name as a list item (`<li>`).
+   - Use this component in the `App` component and pass an array of at least three student names as the prop.
 
-4. **Writing JSX**
+4. **React Fragments**
 
-   - Create a component named `Greeting` that takes a `name` prop and renders a personalized greeting message.
-   - Use this component in the `App` component with different `name` props to display different greetings.
+   - Modify the `StudentList` component to wrap the list items in a React fragment.
+   - Ensure that there is no additional wrapping element around the list items when rendered in the DOM.
 
-5. **Conditional Rendering**
-   - Create a component named `UserStatus` that takes a `isLoggedIn` prop.
-   - If `isLoggedIn` is true, the component should render a welcome message, otherwise, it should render a login prompt.
-   - Use this component in the `App` component, passing different values for the `isLoggedIn` prop to see different render outputs.
+5. **Putting it All Together: Components and Props**
+   - Create a new functional component named `Article` that takes props for `title`, `author`, and `content`.
+   - Render these props within the component to display an article.
+   - Use this `Article` component in the `App` component and pass values for `title`, `author`, and `content` as props.
 
 ## Task Details
 
 - Implement each task in a separate file or component within your React project.
 - Test each component to ensure it functions as expected.
+- You can use mock data for props or create your own data as needed.
 - Feel free to use additional libraries or tools if needed.
 
 ## Submission
