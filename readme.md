@@ -1,64 +1,44 @@
-# Client-Side Routing Exercise
+# Advanced Hooks Exercise
 
 ## Objective
 
-The objective of this exercise is to gain practical experience with client-side routing in React using React Router. It covers the basics of client-side routing, setting up routing in a React application, working with BrowserRouter, Routes, Route components, creating links between routes, handling URL parameters, and implementing nested routes.
+The objective of this exercise is to gain practical experience with advanced hooks in React, covering the useRef hook for accessing DOM elements, working with React Context for managing global state, and creating custom hooks to encapsulate reusable logic.
 
 ## Prerequisites
 
 - Basic knowledge of HTML, CSS, and JavaScript.
-- Familiarity with React fundamentals.
+- Familiarity with React fundamentals, including hooks.
 
 ## Task
 
-1. **Introduction to Client-Side Routing**
+1. **The useRef Hook**
 
    - Create a new React project using Vite.
-   - Install React Router in your project using npm or yarn.
-   - Research and understand the concept of client-side routing and its benefits in single-page applications.
+   - Implement a functional component named `TextInput`.
+   - Inside the `TextInput` component, use the useRef hook to access the input element.
+   - Implement a button that focuses the input element when clicked.
+   - Test the functionality to ensure the input element is focused correctly.
 
-2. **React Router**
+2. **React Context**
 
-   - Set up client-side routing in your React application using React Router.
-   - Configure basic routing for your application.
+   - Implement a simple counter application using React Context for managing global state.
+   - Create a context named `CounterContext` with a state value for the counter and functions to increment and decrement the counter.
+   - Implement provider and consumer components to provide access to the counter state and actions throughout the application.
+   - Create components to display the counter value and buttons to increment and decrement the counter.
 
-3. **BrowserRouter**
-
-   - Implement BrowserRouter in your application to enable client-side routing.
-   - Ensure that the BrowserRouter component wraps your entire application.
-
-4. **Routes**
-
-   - Define routes for different pages or components in your application.
-   - Use the Routes component to specify the routes and their corresponding components.
-
-5. **Route**
-
-   - Use the Route component to define individual routes within the Routes component.
-   - Specify the path and component props for each Route.
-
-6. **Link**
-
-   - Implement navigation between routes using the Link component.
-   - Create links to different routes within your application.
-
-7. **URL Parameters**
-
-   - Create a route that accepts URL parameters, such as a dynamic route for displaying user profiles.
-   - Extract and use URL parameters in your component to customize the content based on the URL.
-
-8. **Nested Routes**
-   - Implement nested routes by nesting Route components within each other.
-   - Create a parent route that renders a layout component, and define child routes within it for different sections of the layout.
+3. **Custom Hooks**
+   - Create a custom hook named `useLocalStorage` for persisting state to local storage.
+   - Implement the `useLocalStorage` hook to store and retrieve the counter value from local storage in the counter application created in task 2.
+   - Ensure that the counter value persists even after refreshing the page.
 
 ## Task Details
 
 - Implement each task in a separate file or component within your React project.
-- Test each route and navigation link to ensure they work correctly.
-- You can use placeholder components or real components for each route, depending on your project structure.
-- Feel free to use additional features of React Router if needed, such as route guards or route transitions.
+- Test each component and hook to ensure they function as expected.
+- You can use mock data or create your own data as needed.
+- Feel free to explore additional features or use cases for each hook.
 
 ## Submission
 
-- After completing the exercise, submit your React project containing all the implemented routing functionality.
-- Provide comments or documentation within your code to explain the purpose of each route and how it works.
+- After completing the exercise, submit your React project containing all the implemented components and hooks.
+- Provide comments or documentation within your code to explain the purpose of each hook and how it works.
