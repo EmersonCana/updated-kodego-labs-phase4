@@ -1,44 +1,20 @@
-# Advanced Hooks Exercise
+# Portfolio Project 4 (Phase 4) - Build a React frontend application with fetched data from API
 
-## Objective
+## Learning Goals
 
-The objective of this exercise is to gain practical experience with advanced hooks in React, covering the useRef hook for accessing DOM elements, working with React Context for managing global state, and creating custom hooks to encapsulate reusable logic.
+- Build a React single page application from scratch
+- Apply knowledge of components, props, and state management
+- Incorporate client-side routing
+- Use data from an API
 
-## Prerequisites
+## Introduction
 
-- Basic knowledge of HTML, CSS, and JavaScript.
-- Familiarity with React fundamentals, including hooks.
+Now that you’ve learned the fundamentals of React, it’s time to practice and expand your skills by making a React project from scratch.
 
-## Task
+## Requirements
 
-1. **The useRef Hook**
-
-   - Create a new React project using Vite.
-   - Implement a functional component named `TextInput`.
-   - Inside the `TextInput` component, use the useRef hook to access the input element.
-   - Implement a button that focuses the input element when clicked.
-   - Test the functionality to ensure the input element is focused correctly.
-
-2. **React Context**
-
-   - Implement a simple counter application using React Context for managing global state.
-   - Create a context named `CounterContext` with a state value for the counter and functions to increment and decrement the counter.
-   - Implement provider and consumer components to provide access to the counter state and actions throughout the application.
-   - Create components to display the counter value and buttons to increment and decrement the counter.
-
-3. **Custom Hooks**
-   - Create a custom hook named `useLocalStorage` for persisting state to local storage.
-   - Implement the `useLocalStorage` hook to store and retrieve the counter value from local storage in the counter application created in task 2.
-   - Ensure that the counter value persists even after refreshing the page.
-
-## Task Details
-
-- Implement each task in a separate file or component within your React project.
-- Test each component and hook to ensure they function as expected.
-- You can use mock data or create your own data as needed.
-- Feel free to explore additional features or use cases for each hook.
-
-## Submission
-
-- After completing the exercise, submit your React project containing all the implemented components and hooks.
-- Provide comments or documentation within your code to explain the purpose of each hook and how it works.
+- You must make a single page application (only one index.html file) using create-react-app.
+- Your app should use at least 5 components in a way that keeps your code well organized.
+- There should be at least 3 client-side routes using React Router. Be sure to include a nav bar or other UI elements that allow users to navigate between routes.
+- Use a json-server to create a RESTful API for your backend and make both a GET and a POST request to the json server. Use a form to make your post request, specifically a controlled form/component. Additionally, you may choose to incorporate data from an external API but it is not required.
+- Add some styling: you’re encouraged to write your CSS from scratch, either by using styled components or writing CSS files and using id/className to style your elements. You can also incorporate a UI framework (like React Bootstrap, Semantic UI, or Material UI).
