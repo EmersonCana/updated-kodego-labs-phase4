@@ -1,55 +1,39 @@
-# React State and Events Exercise
+# React Forms Exercise
 
 ## Objective
 
-The objective of this exercise is to gain practical experience with React state and event handling, covering event handling in React components, understanding and using React state, managing state with events, working with state and arrays, and understanding information flow and inverse data flow in React applications.
+The objective of this exercise is to gain practical experience with React forms, covering controlled components, form submission in React, abstraction of form handling with dynamic onChange event handlers, and integrating forms with state and events.
 
 ## Prerequisites
 
 - Basic knowledge of HTML, CSS, and JavaScript.
-- Familiarity with React fundamentals.
+- Familiarity with React fundamentals, including state and events.
 
 ## Task
 
-1. **Event Handling in React**
+1. **Controlled Components**
 
    - Create a new React project using Vite.
-   - Create a functional component named `ButtonCounter`.
-   - Inside the `ButtonCounter` component, render a button element with the text "Click Me".
-   - Add an event handler to the button that updates the component state each time it is clicked, incrementing a counter value.
-   - Display the current count value below the button.
+   - Create a form component named `LoginForm`.
+   - Inside the `LoginForm` component, render input fields for username and password.
+   - Implement controlled components by setting the input values as state variables and updating them with onChange event handlers.
 
-2. **React State**
+2. **React Forms Submit**
 
-   - Create a class-based component named `Counter`.
-   - Initialize a state property named `count` with an initial value of 0.
-   - Render a button element that displays the current count value.
-   - Implement an event handler that increments the count value when the button is clicked.
-   - Update the component state to reflect the new count value.
+   - Extend the `LoginForm` component to include a submit button.
+   - Implement form submission functionality by capturing form submission events and logging the form data to the console.
 
-3. **React State and Events**
+3. **React Forms Abstraction (Dynamic onChange Event Handler)**
 
-   - Modify the `Counter` component to include a reset button.
-   - Implement an event handler for the reset button that sets the count value back to 0 when clicked.
+   - Create a generic form component named `DynamicForm`.
+   - The `DynamicForm` component should take props for form fields (such as label, type, name, value, and onChange handler).
+   - Implement dynamic onChange event handling within the `DynamicForm` component to abstract away the form handling logic.
+   - Use the `DynamicForm` component to render a login form with username and password fields.
 
-4. **React State and Arrays**
-
-   - Create a functional component named `TodoList`.
-   - Initialize a state property named `todos` with an initial value of an empty array.
-   - Render an unordered list (`<ul>`) to display the list of todos.
-   - Implement functionality to add new todos to the list using an input field and a submit button.
-   - Update the component state to include the new todo when submitted.
-
-5. **Information Flow**
-
-   - Create a parent component named `ParentComponent`.
-   - Inside `ParentComponent`, render both the `ButtonCounter` and `Counter` components from tasks 1 and 2.
-   - Experiment with passing data between the parent component and its children using props.
-
-6. **Inverse Data Flow**
-   - Implement a feature in the `TodoList` component to mark todos as completed.
-   - Add checkboxes next to each todo item.
-   - Implement an event handler that updates the state to mark a todo as completed when its checkbox is clicked.
+4. **Putting it All Together: State and Events**
+   - Create a parent component named `FormContainer`.
+   - Inside `FormContainer`, render both the `LoginForm` component from task 1 and the `DynamicForm` component from task 3.
+   - Experiment with different form handling techniques, such as controlled components and abstraction, within the `FormContainer`.
 
 ## Task Details
 
